@@ -1,10 +1,10 @@
 import 'dart:async';
 import 'dart:math';
 
-import 'package:bett_box/common/common.dart';
-import 'package:bett_box/models/models.dart';
-import 'package:bett_box/widgets/fade_box.dart';
-import 'package:bett_box/widgets/text.dart';
+import 'package:cleanbox/common/common.dart';
+import 'package:cleanbox/models/models.dart';
+import 'package:cleanbox/widgets/fade_box.dart';
+import 'package:cleanbox/widgets/text.dart';
 import 'package:flutter/material.dart';
 
 class MessageManager extends StatefulWidget {

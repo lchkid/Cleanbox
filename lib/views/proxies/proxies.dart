@@ -1,13 +1,13 @@
-import 'package:bett_box/common/common.dart';
-import 'package:bett_box/enum/enum.dart';
-import 'package:bett_box/models/common.dart';
-import 'package:bett_box/models/config.dart';
-import 'package:bett_box/models/widget.dart';
-import 'package:bett_box/providers/providers.dart';
-import 'package:bett_box/state.dart';
-import 'package:bett_box/views/proxies/list.dart';
-import 'package:bett_box/views/proxies/providers.dart';
-import 'package:bett_box/widgets/widgets.dart';
+import 'package:cleanbox/common/common.dart';
+import 'package:cleanbox/enum/enum.dart';
+import 'package:cleanbox/models/common.dart';
+import 'package:cleanbox/models/config.dart';
+import 'package:cleanbox/models/widget.dart';
+import 'package:cleanbox/providers/providers.dart';
+import 'package:cleanbox/state.dart';
+import 'package:cleanbox/views/proxies/list.dart';
+import 'package:cleanbox/views/proxies/providers.dart';
+import 'package:cleanbox/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -35,7 +35,7 @@ class _ProxiesViewState extends ConsumerState<ProxiesView> {
     );
     final (scriptOn, compatible) = ref.watch(
       scriptStateProvider.select(
-        (s) => (s.currentId != null, s.currentScript?.isCompatibleWithBettbox ?? false),
+        (s) => (s.currentId != null, s.currentScript?.isCompatibleWithCleanbox ?? false),
       ),
     );
     final profileOverride = ref.watch(
@@ -188,7 +188,7 @@ class _ProxiesViewState extends ConsumerState<ProxiesView> {
     final profileOverride =
         ref.read(currentProfileProvider)?.useScriptOverride ?? false;
     final script = ref.read(scriptStateProvider).currentScript;
-    if (script != null && script.isCompatibleWithBettbox && profileOverride) {
+    if (script != null && script.isCompatibleWithCleanbox && profileOverride) {
       await showScriptCustomOptions(context, ref, script: script);
       return;
     }

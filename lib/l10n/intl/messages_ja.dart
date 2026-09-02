@@ -266,7 +266,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "deleteTip": m2,
     "deleteTunnel": MessageLookupByLibrary.simpleMessage("転送削除"),
     "desc": MessageLookupByLibrary.simpleMessage(
-      "Bettboxは柔軟で強力なMihomo(Clash.Meta)カーネルを搭載した、快適性を追求したプロキシクライアントです。（FlClashベース）",
+      "Cleanboxは柔軟で強力なMihomo(Clash.Meta)カーネルを搭載した、快適性を追求したプロキシクライアントです。（FlClashベース）",
     ),
     "destination": MessageLookupByLibrary.simpleMessage("宛先アドレス"),
     "destinationGeoIP": MessageLookupByLibrary.simpleMessage("宛先GeoIP"),

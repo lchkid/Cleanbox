@@ -1,7 +1,7 @@
-import 'package:bett_box/common/common.dart';
-import 'package:bett_box/providers/config.dart';
-import 'package:bett_box/widgets/widgets.dart';
-import 'package:bett_box/views/config/sniffer.dart';
+import 'package:cleanbox/common/common.dart';
+import 'package:cleanbox/providers/config.dart';
+import 'package:cleanbox/widgets/widgets.dart';
+import 'package:cleanbox/views/config/sniffer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

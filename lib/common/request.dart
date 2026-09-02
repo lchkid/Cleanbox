@@ -5,9 +5,9 @@ import 'dart:typed_data';
 
 import 'package:dio/dio.dart';
 import 'package:dio/io.dart';
-import 'package:bett_box/common/common.dart';
-import 'package:bett_box/models/models.dart';
-import 'package:bett_box/state.dart';
+import 'package:cleanbox/common/common.dart';
+import 'package:cleanbox/models/models.dart';
+import 'package:cleanbox/state.dart';
 import 'package:flutter/cupertino.dart';
 
 class Request {
@@ -31,7 +31,7 @@ class Request {
         client.autoUncompress = false;
         client.findProxy = (Uri uri) {
           client.userAgent = globalState.ua;
-          return BettboxHttpOverrides.handleFindProxy(uri);
+          return CleanboxHttpOverrides.handleFindProxy(uri);
         };
         return client;
       },

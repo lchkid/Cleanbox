@@ -3,10 +3,10 @@ import 'dart:io';
 import 'dart:math';
 import 'dart:ui';
 
-import 'package:bett_box/common/common.dart';
-import 'package:bett_box/enum/enum.dart';
+import 'package:cleanbox/common/common.dart';
+import 'package:cleanbox/enum/enum.dart';
 import 'package:flutter/foundation.dart';
-import 'package:bett_box/l10n/l10n.dart';
+import 'package:cleanbox/l10n/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:lpinyin/lpinyin.dart';

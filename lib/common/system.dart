@@ -4,13 +4,13 @@ import 'dart:io';
 
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:ffi/ffi.dart';
-import 'package:bett_box/common/common.dart';
-import 'package:bett_box/common/helper_auth.dart';
-import 'package:bett_box/enum/enum.dart';
-import 'package:bett_box/helper/helper.dart';
-import 'package:bett_box/plugins/app.dart';
-import 'package:bett_box/state.dart';
-import 'package:bett_box/widgets/input.dart';
+import 'package:cleanbox/common/common.dart';
+import 'package:cleanbox/common/helper_auth.dart';
+import 'package:cleanbox/enum/enum.dart';
+import 'package:cleanbox/helper/helper.dart';
+import 'package:cleanbox/plugins/app.dart';
+import 'package:cleanbox/state.dart';
+import 'package:cleanbox/widgets/input.dart';
 import 'package:flutter/services.dart';
 import 'package:path/path.dart';
 import 'package:synchronized/synchronized.dart';
@@ -102,7 +102,7 @@ class System {
           corePath,
         ]);
         if (removeResult.exitCode == 0) {
-          commonPrint.log('Cleared quarantine attribute from BettboxCore');
+          commonPrint.log('Cleared quarantine attribute from CleanboxCore');
         } else {
           quarantineCleared = false;
           commonPrint.log(
@@ -121,7 +121,7 @@ class System {
       if (result.exitCode != 0) {
         if (!quarantineCleared) {
           globalState.showNotifier(
-            'Failed to authorize BettboxCore. Try: xattr -dr com.apple.quarantine /Applications/Bettbox.app',
+            'Failed to authorize CleanboxCore. Try: xattr -dr com.apple.quarantine /Applications/Cleanbox.app',
           );
         } else {
           globalState.showNotifier(appLocalizations.tunEnableRequireAdmin);
@@ -608,7 +608,7 @@ class MacOS {
 
   Future<void> _setDns() async {
     // Restore a previous managed value first so repeated enable operations never
-    // overwrite the real system DNS backup with Bettbox's own hijack DNS.
+    // overwrite the real system DNS backup with Cleanbox's own hijack DNS.
     if (!await _restoreDns()) return;
 
     final serviceName = await defaultServiceName;

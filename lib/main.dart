@@ -4,10 +4,10 @@ import 'dart:io';
 import 'dart:isolate';
 import 'dart:ui';
 
-import 'package:bett_box/plugins/app.dart';
-import 'package:bett_box/plugins/tile.dart';
-import 'package:bett_box/plugins/vpn.dart';
-import 'package:bett_box/state.dart';
+import 'package:cleanbox/plugins/app.dart';
+import 'package:cleanbox/plugins/tile.dart';
+import 'package:cleanbox/plugins/vpn.dart';
+import 'package:cleanbox/state.dart';
 import 'package:code_forge/code_forge.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_displaymode/flutter_displaymode.dart';
@@ -20,6 +20,7 @@ import 'clash/lib.dart';
 import 'common/common.dart';
 import 'common/external_control.dart';
 import 'common/network_matcher.dart';
+import 'common/preferences_store.dart';
 import 'models/models.dart';
 
 ReceivePort? _serviceReceiverPort;
@@ -28,6 +29,11 @@ ReceivePort? _messageReceiverPort;
 Future<void> main(List<String> args) async {
   globalState.isService = false;
   WidgetsFlutterBinding.ensureInitialized();
+
+  if (system.isWindows) {
+    // Keep every preference in the portable `config` directory.
+    ConfigFilePreferencesStore.install();
+  }
 
   if (system.isDesktop &&
       (args.contains('--exit') || args.contains('--restart'))) {
@@ -95,7 +101,7 @@ Future<void> _runApp() async {
   await android?.init();
 
   await window?.init();
-  HttpOverrides.global = BettboxHttpOverrides();
+  HttpOverrides.global = CleanboxHttpOverrides();
   runApp(ProviderScope(child: const Application()));
 }
 
@@ -222,7 +228,7 @@ Future<void> _service(List<String> flags) async {
           final profile = globalState.config.profiles
               .where((e) => e.id == profileId)
               .firstOrNull;
-          final profileName = profile?.label ?? 'Bettbox';
+          final profileName = profile?.label ?? 'Cleanbox';
           await vpn?.updateNotificationSpeed(profileName, '↑0B/s ↓0B/s');
         }
 

@@ -6,11 +6,11 @@
     -->
     <application
         android:icon="@mipmap/ic_launcher"
-        android:label="Bettbox Debug"
+        android:label="Cleanbox Debug"
         tools:replace="android:label">
         <service
-            android:name=".services.BettboxTileService"
-            android:label="Bettbox Debug"
+            android:name=".services.CleanboxTileService"
+            android:label="Cleanbox Debug"
             tools:replace="android:label"
             tools:targetApi="24" />
     </application>

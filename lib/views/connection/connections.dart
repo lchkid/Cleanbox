@@ -1,12 +1,12 @@
 import 'dart:async';
 
-import 'package:bett_box/clash/clash.dart';
-import 'package:bett_box/common/common.dart';
-import 'package:bett_box/enum/enum.dart';
-import 'package:bett_box/models/models.dart';
-import 'package:bett_box/providers/providers.dart';
-import 'package:bett_box/state.dart';
-import 'package:bett_box/widgets/widgets.dart';
+import 'package:cleanbox/clash/clash.dart';
+import 'package:cleanbox/common/common.dart';
+import 'package:cleanbox/enum/enum.dart';
+import 'package:cleanbox/models/models.dart';
+import 'package:cleanbox/providers/providers.dart';
+import 'package:cleanbox/state.dart';
+import 'package:cleanbox/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:window_manager/window_manager.dart';

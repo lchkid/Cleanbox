@@ -1,11 +1,11 @@
-import 'package:bett_box/common/common.dart';
-import 'package:bett_box/enum/enum.dart';
+import 'package:cleanbox/common/common.dart';
+import 'package:cleanbox/enum/enum.dart';
 import 'dart:async';
 
-import 'package:bett_box/models/models.dart';
-import 'package:bett_box/providers/app.dart';
-import 'package:bett_box/widgets/fade_box.dart';
-import 'package:bett_box/widgets/pop_scope.dart';
+import 'package:cleanbox/models/models.dart';
+import 'package:cleanbox/providers/app.dart';
+import 'package:cleanbox/widgets/fade_box.dart';
+import 'package:cleanbox/widgets/pop_scope.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';

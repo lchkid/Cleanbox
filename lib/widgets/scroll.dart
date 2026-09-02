@@ -1,9 +1,9 @@
 import 'dart:async';
 
 import 'package:collection/collection.dart';
-import 'package:bett_box/common/common.dart';
-import 'package:bett_box/enum/enum.dart';
-import 'package:bett_box/state.dart';
+import 'package:cleanbox/common/common.dart';
+import 'package:cleanbox/enum/enum.dart';
+import 'package:cleanbox/state.dart';
 import 'package:flutter/material.dart';
 
 class CommonScrollBar extends StatelessWidget {

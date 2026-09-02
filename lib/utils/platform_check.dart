@@ -22,7 +22,7 @@ class PlatformChecker {
       final testDir = Directory.systemTemp.path;
       final testPath = p.join(
         testDir,
-        'bettbox_test_${DateTime.now().millisecondsSinceEpoch}.sock',
+        'cleanbox_test_${DateTime.now().millisecondsSinceEpoch}.sock',
       );
       final address = InternetAddress(testPath, type: InternetAddressType.unix);
       final server = await ServerSocket.bind(address, 0);

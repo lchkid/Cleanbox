@@ -1,5 +1,5 @@
-import 'package:bett_box/common/common.dart';
-import 'package:bett_box/models/models.dart';
+import 'package:cleanbox/common/common.dart';
+import 'package:cleanbox/models/models.dart';
 import 'package:flutter/material.dart';
 
 class SubscriptionInfoView extends StatelessWidget {

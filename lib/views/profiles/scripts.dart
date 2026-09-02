@@ -1,24 +1,25 @@
 import 'dart:convert';
+import 'dart:typed_data';
 
-import 'package:bett_box/clash/clash.dart';
-import 'package:bett_box/common/common.dart';
-import 'package:bett_box/enum/enum.dart';
-import 'package:bett_box/models/models.dart';
-import 'package:bett_box/pages/editor.dart';
-import 'package:bett_box/providers/providers.dart';
-import 'package:bett_box/state.dart';
-import 'package:bett_box/widgets/card.dart';
-import 'package:bett_box/widgets/dialog.dart';
-import 'package:bett_box/widgets/icon.dart';
-import 'package:bett_box/widgets/input.dart';
-import 'package:bett_box/widgets/list.dart';
-import 'package:bett_box/widgets/null_status.dart';
-import 'package:bett_box/widgets/pop_scope.dart';
-import 'package:bett_box/widgets/popup.dart';
-import 'package:bett_box/widgets/scaffold.dart';
-import 'package:bett_box/widgets/scroll.dart';
-import 'package:bett_box/widgets/sheet.dart';
-import 'package:bett_box/widgets/text.dart';
+import 'package:cleanbox/clash/clash.dart';
+import 'package:cleanbox/common/common.dart';
+import 'package:cleanbox/enum/enum.dart';
+import 'package:cleanbox/models/models.dart';
+import 'package:cleanbox/pages/editor.dart';
+import 'package:cleanbox/providers/providers.dart';
+import 'package:cleanbox/state.dart';
+import 'package:cleanbox/widgets/card.dart';
+import 'package:cleanbox/widgets/dialog.dart';
+import 'package:cleanbox/widgets/icon.dart';
+import 'package:cleanbox/widgets/input.dart';
+import 'package:cleanbox/widgets/list.dart';
+import 'package:cleanbox/widgets/null_status.dart';
+import 'package:cleanbox/widgets/pop_scope.dart';
+import 'package:cleanbox/widgets/popup.dart';
+import 'package:cleanbox/widgets/scaffold.dart';
+import 'package:cleanbox/widgets/scroll.dart';
+import 'package:cleanbox/widgets/sheet.dart';
+import 'package:cleanbox/widgets/text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -213,7 +214,7 @@ class _ScriptsViewState extends ConsumerState<ScriptsView> {
                               _handleToEditor(script: script);
                             },
                           ),
-                          if (script.isCompatibleWithBettbox)
+                          if (script.isCompatibleWithCleanbox)
                             PopupMenuItemData(
                               icon: Icons.tune,
                               label: appLocalizations.custom,
@@ -413,17 +414,53 @@ class _ScriptsViewState extends ConsumerState<ScriptsView> {
   }
 
   Future<void> _handleFileImport() async {
-    final file = await picker.pickerFile();
-    if (file == null) {
-      return;
+    try {
+      final file = await picker.pickerFile();
+      if (file == null) {
+        return;
+      }
+      final bytes = file.bytes;
+      if (bytes == null) {
+        return;
+      }
+      final content = _decodeScriptBytes(bytes);
+      if (mounted) {
+        _handleToEditor(initialContent: content);
+      }
+    } catch (e) {
+      globalState.showMessage(
+        message: TextSpan(text: '${appLocalizations.importFailed}: $e'),
+        cancelable: false,
+      );
     }
-    final bytes = file.bytes;
-    if (bytes == null) {
-      return;
+  }
+
+  String _decodeScriptBytes(Uint8List bytes) {
+    if (bytes.length >= 2) {
+      if (bytes[0] == 0xFF && bytes[1] == 0xFE) {
+        // UTF-16LE with BOM (Windows Notepad "Unicode")
+        final codeUnits = <int>[];
+        for (var i = 2; i + 1 < bytes.length; i += 2) {
+          codeUnits.add(bytes[i] | (bytes[i + 1] << 8));
+        }
+        return String.fromCharCodes(codeUnits);
+      }
+      if (bytes[0] == 0xFE && bytes[1] == 0xFF) {
+        // UTF-16BE with BOM
+        final codeUnits = <int>[];
+        for (var i = 2; i + 1 < bytes.length; i += 2) {
+          codeUnits.add((bytes[i] << 8) | bytes[i + 1]);
+        }
+        return String.fromCharCodes(codeUnits);
+      }
     }
-    final content = utf8.decode(bytes);
-    if (mounted) {
-      _handleToEditor(initialContent: content);
+    // Strict UTF-8 first; fall back to lenient decoding so scripts saved
+    // with a legacy encoding (e.g. GBK/ANSI) still open in the editor
+    // instead of silently failing the import.
+    try {
+      return utf8.decode(bytes);
+    } on FormatException {
+      return utf8.decode(bytes, allowMalformed: true);
     }
   }
 

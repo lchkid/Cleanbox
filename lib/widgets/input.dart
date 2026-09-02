@@ -1,9 +1,9 @@
-import 'package:bett_box/common/common.dart';
-import 'package:bett_box/models/common.dart';
-import 'package:bett_box/state.dart';
-import 'package:bett_box/widgets/dialog.dart';
-import 'package:bett_box/widgets/null_status.dart';
-import 'package:bett_box/widgets/text.dart';
+import 'package:cleanbox/common/common.dart';
+import 'package:cleanbox/models/common.dart';
+import 'package:cleanbox/state.dart';
+import 'package:cleanbox/widgets/dialog.dart';
+import 'package:cleanbox/widgets/null_status.dart';
+import 'package:cleanbox/widgets/text.dart';
 import 'package:flutter/material.dart';
 
 import 'card.dart';

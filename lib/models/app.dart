@@ -1,5 +1,5 @@
-import 'package:bett_box/common/common.dart';
-import 'package:bett_box/enum/enum.dart';
+import 'package:cleanbox/common/common.dart';
+import 'package:cleanbox/enum/enum.dart';
 import 'package:flutter/services.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 

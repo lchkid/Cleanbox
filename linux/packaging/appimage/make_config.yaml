@@ -1,19 +1,19 @@
-display_name: Bettbox
+display_name: Cleanbox
 
 icon: ./assets/images/icon.png
 
 keywords:
-  - Bettbox
+  - Cleanbox
   - Clash
   - ClashMeta
   - Proxy
 
-generic_name: Bettbox
+generic_name: Cleanbox
 
 categories:
   - Network
 
 startup_notify: true
-startup_wm_class: com.appshub.bettbox
+startup_wm_class: com.appshub.cleanbox
 
 include: []

@@ -11,11 +11,7 @@
 #include "flutter/generated_plugin_registrant.h"
 #include "resource.h"
 
-#ifdef BETTBOX_DEV
-#define BETTBOX_REG_KEY L"Software\\BettboxDev"
-#else
-#define BETTBOX_REG_KEY L"Software\\Bettbox"
-#endif
+#define CLEANBOX_REG_KEY L"Software\\Cleanbox"
 
 namespace {
 
@@ -51,7 +47,7 @@ bool ReadRegistryDword(const wchar_t* name, DWORD* value) {
   HKEY hKey;
   LONG result = RegOpenKeyExW(
       HKEY_CURRENT_USER,
-      BETTBOX_REG_KEY,
+      CLEANBOX_REG_KEY,
       0,
       KEY_READ,
       &hKey
@@ -70,7 +66,7 @@ bool WriteRegistryDword(const wchar_t* name, DWORD value) {
   HKEY hKey;
   LONG result = RegCreateKeyExW(
       HKEY_CURRENT_USER,
-      BETTBOX_REG_KEY,
+      CLEANBOX_REG_KEY,
       0,
       NULL,
       REG_OPTION_NON_VOLATILE,
@@ -92,7 +88,7 @@ void DeleteRegistryValue(const wchar_t* name) {
   HKEY hKey;
   LONG result = RegOpenKeyExW(
       HKEY_CURRENT_USER,
-      BETTBOX_REG_KEY,
+      CLEANBOX_REG_KEY,
       0,
       KEY_SET_VALUE,
       &hKey

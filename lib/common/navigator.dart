@@ -1,6 +1,6 @@
-import 'package:bett_box/enum/enum.dart';
-import 'package:bett_box/models/app.dart';
-import 'package:bett_box/state.dart';
+import 'package:cleanbox/enum/enum.dart';
+import 'package:cleanbox/models/app.dart';
+import 'package:cleanbox/state.dart';
 import 'package:flutter/cupertino.dart';
 
 class BaseNavigator {

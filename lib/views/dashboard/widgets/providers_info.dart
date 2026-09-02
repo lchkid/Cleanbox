@@ -1,6 +1,6 @@
-import 'package:bett_box/common/common.dart';
-import 'package:bett_box/views/proxies/providers.dart';
-import 'package:bett_box/widgets/widgets.dart';
+import 'package:cleanbox/common/common.dart';
+import 'package:cleanbox/views/proxies/providers.dart';
+import 'package:cleanbox/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
 class ProvidersInfo extends StatelessWidget {

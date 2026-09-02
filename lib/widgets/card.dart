@@ -1,6 +1,6 @@
-import 'package:bett_box/common/common.dart';
-import 'package:bett_box/enum/enum.dart';
-import 'package:bett_box/widgets/fade_box.dart';
+import 'package:cleanbox/common/common.dart';
+import 'package:cleanbox/enum/enum.dart';
+import 'package:cleanbox/widgets/fade_box.dart';
 import 'package:flutter/material.dart';
 
 import 'text.dart';

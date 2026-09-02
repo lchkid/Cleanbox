@@ -78,3 +78,11 @@ app.*.map.json
 # FVM Version Cache
 .fvm/
 .fvmrc
+
+# 本地 UI 测试 / 调试产生的临时产物（不入库）
+/_parse_rtree.py
+/_release_smoke.png
+/_rtree.*
+/_tree*.json
+/_tree*.txt
+/_ui*.png

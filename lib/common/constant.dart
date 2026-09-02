@@ -2,20 +2,21 @@ import 'dart:math';
 import 'dart:ui';
 
 import 'package:collection/collection.dart';
-import 'package:bett_box/common/common.dart';
-import 'package:bett_box/enum/enum.dart';
-import 'package:bett_box/models/models.dart';
-import 'package:bett_box/state.dart';
+import 'package:cleanbox/common/common.dart';
+import 'package:cleanbox/enum/enum.dart';
+import 'package:cleanbox/models/models.dart';
+import 'package:cleanbox/state.dart';
 import 'package:flutter/material.dart';
 
 const appName = AppIdentity.displayName;
 const appHelperService = WindowsHelperIdentity.serviceName;
 const coreName = 'clash.meta';
 const tunDeviceName = AppIdentity.tunDeviceName;
+const configDirectoryName = 'config';
 const browserUa =
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36';
 const packageName = AppIdentity.packageId;
-final unixSocketPath = '/tmp/BettboxSocket_${Random().nextInt(10000)}.sock';
+final unixSocketPath = '/tmp/CleanboxSocket_${Random().nextInt(10000)}.sock';
 const maxTextScale = 1.4;
 const minTextScale = 0.8;
 final baseInfoEdgeInsets = EdgeInsets.symmetric(
@@ -48,7 +49,7 @@ const configKey = 'config';
 const customSidebarIconKey = 'custom_sidebar_icon';
 const customDashboardTitleKey = 'custom_dashboard_title';
 const double dialogCommonWidth = 300;
-const repository = 'appshubcc/Bettbox';
+const repository = 'lchkid/Cleanbox';
 const defaultExternalController = '127.0.0.1:9090';
 const maxMobileWidth = 600;
 const maxLaptopWidth = 840;
@@ -138,9 +139,9 @@ double getWidgetHeight(num lines) {
 
 const maxLength = 256;
 
-final mainIsolate = 'BettboxMainIsolate';
+final mainIsolate = 'CleanboxMainIsolate';
 
-final serviceIsolate = 'BettboxServiceIsolate';
+final serviceIsolate = 'CleanboxServiceIsolate';
 
 const defaultPrimaryColors = [
   0xFF191919,

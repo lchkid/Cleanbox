@@ -1,10 +1,10 @@
 import 'dart:async';
 
-import 'package:bett_box/clash/clash.dart';
-import 'package:bett_box/common/common.dart';
-import 'package:bett_box/plugins/app.dart';
-import 'package:bett_box/state.dart';
-import 'package:bett_box/widgets/widgets.dart';
+import 'package:cleanbox/clash/clash.dart';
+import 'package:cleanbox/common/common.dart';
+import 'package:cleanbox/plugins/app.dart';
+import 'package:cleanbox/state.dart';
+import 'package:cleanbox/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
 class FcmStatusData {

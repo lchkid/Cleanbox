@@ -1,5 +1,5 @@
-import 'package:bett_box/plugins/app.dart';
-import 'package:bett_box/state.dart';
+import 'package:cleanbox/plugins/app.dart';
+import 'package:cleanbox/state.dart';
 
 import 'system.dart';
 

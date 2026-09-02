@@ -1,8 +1,8 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:bett_box/common/dav_client.dart';
-import 'package:bett_box/models/models.dart';
+import 'package:cleanbox/common/dav_client.dart';
+import 'package:cleanbox/models/models.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

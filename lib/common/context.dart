@@ -1,5 +1,5 @@
-import 'package:bett_box/manager/message_manager.dart';
-import 'package:bett_box/widgets/scaffold.dart';
+import 'package:cleanbox/manager/message_manager.dart';
+import 'package:cleanbox/widgets/scaffold.dart';
 import 'package:flutter/material.dart';
 
 extension BuildContextExtension on BuildContext {

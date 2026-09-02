@@ -72,17 +72,10 @@ IDI_APP_ICON            ICON                    "resources\\app_icon.ico"
 #define VERSION_AS_STRING "1.0.0"
 #endif
 
-#ifdef BETTBOX_DEV
-#define APP_FILE_DESCRIPTION "Bettbox Dev"
-#define APP_INTERNAL_NAME "bettbox_dev"
-#define APP_ORIGINAL_FILENAME "Bettbox.exe"
-#define APP_PRODUCT_NAME "Bettbox Dev"
-#else
-#define APP_FILE_DESCRIPTION "Bettbox"
-#define APP_INTERNAL_NAME "bettbox"
-#define APP_ORIGINAL_FILENAME "Bettbox.exe"
-#define APP_PRODUCT_NAME "Bettbox"
-#endif
+#define APP_FILE_DESCRIPTION "Cleanbox"
+#define APP_INTERNAL_NAME "cleanbox"
+#define APP_ORIGINAL_FILENAME "Cleanbox.exe"
+#define APP_PRODUCT_NAME "Cleanbox"
 
 VS_VERSION_INFO VERSIONINFO
  FILEVERSION VERSION_AS_NUMBER

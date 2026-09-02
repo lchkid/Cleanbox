@@ -2,10 +2,10 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:isolate';
 
-import 'package:bett_box/clash/message.dart';
-import 'package:bett_box/common/common.dart';
-import 'package:bett_box/enum/enum.dart';
-import 'package:bett_box/models/models.dart';
+import 'package:cleanbox/clash/message.dart';
+import 'package:cleanbox/common/common.dart';
+import 'package:cleanbox/enum/enum.dart';
+import 'package:cleanbox/models/models.dart';
 
 mixin ClashInterface {
   Future<bool> init(InitParams params);

@@ -1,4 +1,4 @@
-import 'package:bett_box/enum/enum.dart';
+import 'package:cleanbox/enum/enum.dart';
 import 'package:flutter/material.dart';
 
 import 'text.dart';

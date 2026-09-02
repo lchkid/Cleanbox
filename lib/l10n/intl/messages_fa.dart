@@ -335,7 +335,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "deleteTip": m2,
     "deleteTunnel": MessageLookupByLibrary.simpleMessage("حذف هدایت"),
     "desc": MessageLookupByLibrary.simpleMessage(
-      "Bettbox یک کلاینت پروکسی بر پایه هسته قدرتمند Mihomo (Clash.Meta) است. (برگرفته از FlClash)",
+      "Cleanbox یک کلاینت پروکسی بر پایه هسته قدرتمند Mihomo (Clash.Meta) است. (برگرفته از FlClash)",
     ),
     "destination": MessageLookupByLibrary.simpleMessage("آدرس مقصد"),
     "destinationGeoIP": MessageLookupByLibrary.simpleMessage(

@@ -1,6 +1,6 @@
-import 'package:bett_box/common/proxy.dart';
-import 'package:bett_box/models/models.dart';
-import 'package:bett_box/providers/state.dart';
+import 'package:cleanbox/common/proxy.dart';
+import 'package:cleanbox/models/models.dart';
+import 'package:cleanbox/providers/state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

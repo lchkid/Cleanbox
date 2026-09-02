@@ -3,12 +3,11 @@ const _useDevIdentity = bool.fromEnvironment('APP_DEV');
 class AppIdentity {
   static const isDev = _useDevIdentity;
 
-  static const productName = 'Bettbox';
-  static const devSuffix = 'Dev';
-  static const packageId = 'com.appshub.bettbox';
+  static const productName = 'Cleanbox';
+  static const packageId = 'com.appshub.cleanbox';
 
-  static const compactName = isDev ? '$productName$devSuffix' : productName;
-  static const displayName = isDev ? '$productName Dev' : productName;
+  static const compactName = productName;
+  static const displayName = productName;
   static const mainExecutableName = productName;
   static const coreExecutableName = '${compactName}Core';
   static const dataDirName = compactName;

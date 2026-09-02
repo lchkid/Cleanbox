@@ -88,14 +88,14 @@ class InnoSetupScript {
   Future<File> createFile() async {
     final isDev = makeConfig.flavor == 'dev' ||
         (makeConfig.displayName?.contains('Dev') ?? false);
-    final coreExecutableName = isDev ? 'BettboxDevCore.exe' : 'BettboxCore.exe';
+    final coreExecutableName = isDev ? 'CleanboxDevCore.exe' : 'CleanboxCore.exe';
     final helperExecutableName = isDev
-        ? 'BettboxDevHelperService.exe'
-        : 'BettboxHelperService.exe';
+        ? 'CleanboxDevHelperService.exe'
+        : 'CleanboxHelperService.exe';
     final helperServiceName = isDev
-        ? 'BettboxDevHelperService'
-        : 'BettboxHelperService';
-    final taskName = isDev ? 'Bettbox Dev' : 'Bettbox';
+        ? 'CleanboxDevHelperService'
+        : 'CleanboxHelperService';
+    final taskName = isDev ? 'Cleanbox Dev' : 'Cleanbox';
     Map<String, dynamic> variables = {
       'APP_ID': makeConfig.appId,
       'APP_NAME': makeConfig.appName,

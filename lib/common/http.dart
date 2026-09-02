@@ -1,9 +1,9 @@
 import 'dart:io';
 
-import 'package:bett_box/common/common.dart';
-import 'package:bett_box/state.dart';
+import 'package:cleanbox/common/common.dart';
+import 'package:cleanbox/state.dart';
 
-class BettboxHttpOverrides extends HttpOverrides {
+class CleanboxHttpOverrides extends HttpOverrides {
   static String handleFindProxy(Uri url) {
     if ([localhost].contains(url.host)) {
       return 'DIRECT';

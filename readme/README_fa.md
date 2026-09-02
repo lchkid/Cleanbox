@@ -2,18 +2,18 @@
   <a href="../README.md">简体中文</a> | <a href="README_en.md">English</a> | <a href="README_ru.md">Русский</a> | <strong>فارسی</strong> | <a href="README_ja.md">日本語</a> | <a href="README_ko.md">한국어</a>
 </h4>
 
-<h1 align="center">⚡ Bettbox</h1>
+<h1 align="center">⚡ Cleanbox</h1>
 <p align="center">
   <strong>Another Better Mihomo Client</strong>
 </p>
 
-**Bettbox یک کلاینت چندسکویی برای دیباگ شبکه و تقسیم ترافیک بر اساس قوانین است که با هسته Mihomo (Clash Meta) بازنویسی شده است.**
+**Cleanbox یک کلاینت چندسکویی برای دیباگ شبکه و تقسیم ترافیک بر اساس قوانین است که با هسته Mihomo (Clash Meta) بازنویسی شده است.**
 
-با پایبندی به اصل "Better Experience"، Bettbox ضمن حفظ رابط کاربری جذاب نسخه اصلی، جزئیات و منطق برنامه را عمیقاً بهینه‌سازی کرده است. هدف: انیمیشن‌های روان در فرانت‌اند و عملکرد بی‌صدا و کم‌مصرف در پس‌زمینه — یک کلاینت سبک و پایدار برای Mihomo.
+با پایبندی به اصل "Better Experience"، Cleanbox ضمن حفظ رابط کاربری جذاب نسخه اصلی، جزئیات و منطق برنامه را عمیقاً بهینه‌سازی کرده است. هدف: انیمیشن‌های روان در فرانت‌اند و عملکرد بی‌صدا و کم‌مصرف در پس‌زمینه — یک کلاینت سبک و پایدار برای Mihomo.
 
-Bettbox یعنی: Better Experience, Out of the box (تجربه برتر، آماده استفاده).
+Cleanbox یعنی: Better Experience, Out of the box (تجربه برتر، آماده استفاده).
 
-[![Latest Release](https://img.shields.io/github/v/release/appshubcc/Bettbox?style=for-the-badge&logo=github&color=238636&label=Release)](https://github.com/appshubcc/Bettbox/releases/latest) [![Core](https://img.shields.io/github/v/release/MetaCubeX/mihomo?style=for-the-badge&logo=go&logoColor=white&color=8A2BE2&label=Mihomo)](https://github.com/MetaCubeX/mihomo/releases/latest)
+[![Latest Release](https://img.shields.io/github/v/release/lchkid/Cleanbox?style=for-the-badge&logo=github&color=238636&label=Release)](https://github.com/lchkid/Cleanbox/releases/latest) [![Core](https://img.shields.io/github/v/release/MetaCubeX/mihomo?style=for-the-badge&logo=go&logoColor=white&color=8A2BE2&label=Mihomo)](https://github.com/MetaCubeX/mihomo/releases/latest)
 ---
 ### ✈️ جامعه تلگرام
 
@@ -21,7 +21,7 @@ Bettbox یعنی: Better Experience, Out of the box (تجربه برتر، آم�
 
 <div align="left">
 
-[![Telegram Group](https://img.shields.io/badge/Bettbox-Chat-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/appshub_chat) [![Telegram Channel](https://img.shields.io/badge/Bettbox-Channel-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/appshub_channel)
+[![Telegram Group](https://img.shields.io/badge/Cleanbox-Chat-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/appshub_chat) [![Telegram Channel](https://img.shields.io/badge/Cleanbox-Channel-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/appshub_channel)
 
 ---
 ## 🚀 ویژگی‌های اصلی
@@ -46,7 +46,7 @@ Bettbox یعنی: Better Experience, Out of the box (تجربه برتر، آم�
 
 ## 🛠️ نصب و دانلود
 
-لطفاً برای دانلود آخرین فایل نصب مناسب سیستم خود به صفحه **[[انتشارها (Releases)]](https://github.com/appshubcc/Bettbox/releases)** مراجعه کنید.
+لطفاً برای دانلود آخرین فایل نصب مناسب سیستم خود به صفحه **[[انتشارها (Releases)]](https://github.com/lchkid/Cleanbox/releases)** مراجعه کنید.
 
 
 * **پلتفرم‌های دسکتاپ**: 
@@ -58,8 +58,8 @@ Bettbox یعنی: Better Experience, Out of the box (تجربه برتر، آم�
 * **سیستم‌عامل HarmonyOS NEXT**: لطفاً همراه با برنامه [[ZhuoYiTong]](https://harmonyos.cool/android-app) استفاده کنید.
 
 **سایر روش‌های نصب:**<br>
-**آرچ لینوکس (ArchLinux):** <code>yay -S bettbox-bin</code> یا <code>paru -S bettbox-bin</code> (نگهداری توسط [lyj404](https://github.com/lyj404/bettbox-aur))<br>
-**AMD64=v1:** <code>yay -S bettbox-compatible-bin</code> یا <code>paru -S bettbox-compatible-bin</code> (نگهداری توسط [VillagerTom](https://github.com/VillagerTom))
+**آرچ لینوکس (ArchLinux):** <code>yay -S cleanbox-bin</code> یا <code>paru -S cleanbox-bin</code> (نگهداری توسط [lyj404](https://github.com/lyj404/cleanbox-aur))<br>
+**AMD64=v1:** <code>yay -S cleanbox-compatible-bin</code> یا <code>paru -S cleanbox-compatible-bin</code> (نگهداری توسط [VillagerTom](https://github.com/VillagerTom))
 
 ---
 ## ❓ سوالات متداول
@@ -67,7 +67,7 @@ Bettbox یعنی: Better Experience, Out of the box (تجربه برتر، آم�
 1. **مشکلات نصب، راه‌اندازی و امنیت**:
    - دستگاه‌های اندرویدی: **از اعطای دسترسی‌های پس‌زمینه و حداقل سیستم‌عامل (Android 8.0+) مطمئن شوید**.
    - سیستم‌های قدیمی: بررسی کنید آیا سیستم شما **نیازمند دانلود نسخه Compatible است**.
-   - **امنیت: پروژه Bettbox کاملاً متن‌باز است و ممیزی امنیتی Signpath را با موفقیت گذرانده است.**
+   - **امنیت: پروژه Cleanbox کاملاً متن‌باز است و ممیزی امنیتی Signpath را با موفقیت گذرانده است.**
 
 2. **مشکلات رایج دسکتاپ**:
    - دسترسی مدیریت در ویندوز: به صورت خودکار در هنگام نصب انجام می‌شود — **نیازی به تایید دستی نیست**.
@@ -76,16 +76,16 @@ Bettbox یعنی: Better Experience, Out of the box (تجربه برتر، آم�
    - در صورت تداوم مشکل، یک ISSUE ثبت کنید.
 
 3. **راهنمای نصب در macOS**:
-   - فایل متناسب با پلتفرم خود (Intel / Apple Silicon) را دانلود کرده و `Bettbox-macos-xx.dmg` را باز کنید.
-   - آیکون Bettbox را به پوشه `Applications` منتقل کنید.
+   - فایل متناسب با پلتفرم خود (Intel / Apple Silicon) را دانلود کرده و `Cleanbox-macos-xx.dmg` را باز کنید.
+   - آیکون Cleanbox را به پوشه `Applications` منتقل کنید.
    - **میانبر زدن بلاک امنیتی Gatekeeper برای اولین اجرا** ([به دلیل عدم خرید گواهی رسمی توسعه‌دهنده اپل](https://support.apple.com/en-us/102445)):
-     - **روش پیشنهادی**: در پوشه Applications، **روی آیکون Bettbox راست‌کلیک کنید**، گزینه **"Open"** را انتخاب کرده و مجدداً روی **"Open"** کلیک کنید.
+     - **روش پیشنهادی**: در پوشه Applications، **روی آیکون Cleanbox راست‌کلیک کنید**، گزینه **"Open"** را انتخاب کرده و مجدداً روی **"Open"** کلیک کنید.
      - **روش جایگزین**: در صورت مسدود بودن، به System Settings -> Privacy & Security رفته و روی **"Open Anyway"** کلیک کنید.
    - در اولین فعال‌سازی حالت TUN، رمز عبور سیستم مک خود را وارد کنید.
    - **خطای "damaged and can't be opened"**:
      - این یک هشدار اشتباه Gatekeeper است. ترمینال را باز کرده و دستور زیر را اجرا کنید:
        ```bash
-       xattr -d com.apple.quarantine /Applications/Bettbox.app
+       xattr -d com.apple.quarantine /Applications/Cleanbox.app
        ```
 
 4. **عدم امکان وارد کردن اشتراک**:
@@ -111,8 +111,8 @@ Bettbox یعنی: Better Experience, Out of the box (تجربه برتر، آم�
 
 سفارشی‌سازی UI اسکریپت:
 
-* از نسخه v1.18.8، برنامه Bettbox از اسکریپت‌های سفارشی پشتیبانی می‌کند. برای نمونه **[مخزن اسکریپت AIsouler](https://github.com/AIsouler/MyClash)** کافیست کد زیر را در سطر اول اسکریپت قرار دهید:
-* <code>const Compatible_With_Bettbox = { ruleOptionsEnable: true };</code>
+* از نسخه v1.18.8، برنامه Cleanbox از اسکریپت‌های سفارشی پشتیبانی می‌کند. برای نمونه **[مخزن اسکریپت AIsouler](https://github.com/AIsouler/MyClash)** کافیست کد زیر را در سطر اول اسکریپت قرار دهید:
+* <code>const Compatible_With_Cleanbox = { ruleOptionsEnable: true };</code>
 
 ---
 
@@ -139,7 +139,7 @@ Bettbox یعنی: Better Experience, Out of the box (تجربه برتر، آم�
 
 **[FlClash GUI](https://github.com/chen08209/FlClash)** 〢 **[Mihomo Core](https://github.com/MetaCubeX/mihomo)**
 
-تشکر ویژه از تمامی [مشارکت‌کنندگان](https://github.com/appshubcc/Bettbox/graphs/contributors) و پروژه‌های مرتبط:
+تشکر ویژه از تمامی [مشارکت‌کنندگان](https://github.com/lchkid/Cleanbox/graphs/contributors) و پروژه‌های مرتبط:
 
 [CMFA](https://github.com/MetaCubeX/ClashMetaForAndroid), [Sparkle](https://github.com/xishang0128/sparkle), [SFA](https://github.com/SagerNet/sing-box-for-android), [HUSI](https://github.com/xchacha20-poly1305/husi), [V2rayN](https://github.com/2dust/v2rayN)
 

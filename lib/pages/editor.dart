@@ -1,11 +1,11 @@
 import 'dart:convert';
 
-import 'package:bett_box/common/common.dart';
-import 'package:bett_box/enum/enum.dart' hide Mode;
-import 'package:bett_box/models/common.dart';
-import 'package:bett_box/providers/app.dart';
-import 'package:bett_box/state.dart';
-import 'package:bett_box/widgets/widgets.dart';
+import 'package:cleanbox/common/common.dart';
+import 'package:cleanbox/enum/enum.dart' hide Mode;
+import 'package:cleanbox/models/common.dart';
+import 'package:cleanbox/providers/app.dart';
+import 'package:cleanbox/state.dart';
+import 'package:cleanbox/widgets/widgets.dart';
 import 'package:code_forge/code_forge.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';

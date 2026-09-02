@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:io';
 
-import 'package:bett_box/common/common.dart';
+import 'package:cleanbox/common/common.dart';
 
 import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
@@ -15,20 +15,28 @@ class AppPath {
 
   AppPath._internal() {
     appDirPath = join(dirname(Platform.resolvedExecutable));
-    getApplicationSupportDirectory().then((value) {
-      if (system.isWindows && AppIdentity.isDev) {
-        dataDir.complete(
-          Directory(join(value.parent.path, AppIdentity.dataDirName)),
-        );
-      } else {
-        dataDir.complete(value);
-      }
-    });
+    if (system.isWindows) {
+      // Portable layout: all user data lives in a `config` folder next to
+      // the executable instead of %APPDATA%\com.appshub\Cleanbox.
+      dataDir.complete(Directory(join(appDirPath, configDirectoryName)));
+    } else {
+      getApplicationSupportDirectory().then((value) {
+        if (system.isWindows && AppIdentity.isDev) {
+          dataDir.complete(
+            Directory(join(value.parent.path, AppIdentity.dataDirName)),
+          );
+        } else {
+          dataDir.complete(value);
+        }
+      });
+    }
     getTemporaryDirectory().then((value) {
       tempDir.complete(value);
     });
     getDownloadsDirectory().then((value) {
-      downloadDir.complete(value);
+      // Some Windows environments have no Downloads folder; fall back to
+      // the executable directory so file pickers never open with a null path.
+      downloadDir.complete(value ?? Directory(appDirPath));
     });
   }
 

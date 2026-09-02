@@ -1,9 +1,9 @@
 import 'dart:async';
 
-import 'package:bett_box/common/common.dart';
-import 'package:bett_box/providers/config.dart';
-import 'package:bett_box/state.dart';
-import 'package:bett_box/widgets/list.dart';
+import 'package:cleanbox/common/common.dart';
+import 'package:cleanbox/providers/config.dart';
+import 'package:cleanbox/state.dart';
+import 'package:cleanbox/widgets/list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -41,7 +41,7 @@ class AboutView extends StatelessWidget {
             title: 'Github Releases',
             icon: Icons.star,
             onTap: () =>
-                globalState.openUrl('https://github.com/appshubcc/Bettbox'),
+                globalState.openUrl('https://github.com/lchkid/Cleanbox'),
           ),
           right: _LinkGridTile(
             title: appLocalizations.checkUpdate,

@@ -2,18 +2,18 @@
   <a href="../README.md">简体中文</a> | <strong>English</strong> | <a href="README_ru.md">Русский</a> | <a href="README_fa.md">فارسی</a> | <a href="README_ja.md">日本語</a> | <a href="README_ko.md">한국어</a>
 </h4>
 
-<h1 align="center">⚡ Bettbox</h1>
+<h1 align="center">⚡ Cleanbox</h1>
 <p align="center">
   <strong>Another Better Mihomo Client</strong>
 </p>
 
-**Bettbox is a cross-platform network debugging and rule-based traffic splitting client powered by the Mihomo (Clash Meta) core and refactored from an early version of FlClash.**
+**Cleanbox is a cross-platform network debugging and rule-based traffic splitting client powered by the Mihomo (Clash Meta) core and refactored from an early version of FlClash.**
 
-Guided by the principle of "Better Experience", Bettbox inherits the original sleek UI while deeply refining key details and feature logic. Goal: silky-smooth animations in the foreground, zero-impact power saving in the background — a lightweight, rock-solid Mihomo client.
+Guided by the principle of "Better Experience", Cleanbox inherits the original sleek UI while deeply refining key details and feature logic. Goal: silky-smooth animations in the foreground, zero-impact power saving in the background — a lightweight, rock-solid Mihomo client.
 
-Bettbox stands for: Better Experience, Out of the box.
+Cleanbox stands for: Better Experience, Out of the box.
 
-[![Latest Release](https://img.shields.io/github/v/release/appshubcc/Bettbox?style=for-the-badge&logo=github&color=238636&label=Release)](https://github.com/appshubcc/Bettbox/releases/latest) [![Core](https://img.shields.io/github/v/release/MetaCubeX/mihomo?style=for-the-badge&logo=go&logoColor=white&color=8A2BE2&label=Mihomo)](https://github.com/MetaCubeX/mihomo/releases/latest)
+[![Latest Release](https://img.shields.io/github/v/release/lchkid/Cleanbox?style=for-the-badge&logo=github&color=238636&label=Release)](https://github.com/lchkid/Cleanbox/releases/latest) [![Core](https://img.shields.io/github/v/release/MetaCubeX/mihomo?style=for-the-badge&logo=go&logoColor=white&color=8A2BE2&label=Mihomo)](https://github.com/MetaCubeX/mihomo/releases/latest)
 ---
 ### ✈️ Telegram Community
 
@@ -21,7 +21,7 @@ Bettbox stands for: Better Experience, Out of the box.
 
 <div align="left">
 
-[![Telegram Group](https://img.shields.io/badge/Bettbox-Chat-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/appshub_chat) [![Telegram Channel](https://img.shields.io/badge/Bettbox-Channel-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/appshub_channel)
+[![Telegram Group](https://img.shields.io/badge/Cleanbox-Chat-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/appshub_chat) [![Telegram Channel](https://img.shields.io/badge/Cleanbox-Channel-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/appshub_channel)
 
 ---
 ## 🚀 Core Features
@@ -47,7 +47,7 @@ Bettbox stands for: Better Experience, Out of the box.
 ###   🛩️ Recommended Services
 ### Premium Dedicated Line  〢  [BBXY](https://www.bbxy01.com/v2/register?code=c09R)
 
-### Bettbox Exclusive Discount Code (32% OFF): bettbox68
+### Cleanbox Exclusive Discount Code (32% OFF): cleanbox68
 
 **Review** : ❚ ❚  Established premium line operated overseas for years with excellent stability and reputation. Approx. ¥17/mo or ¥127/yr after discount. Ideal for users demanding high stability and low latency. Extra 5-10GB bonus bandwidth per daily check-in.
 
@@ -59,7 +59,7 @@ Bettbox stands for: Better Experience, Out of the box.
 ---
 ## 🛠️ Installation & Downloads
 
-Please visit the **[[Releases]](https://github.com/appshubcc/Bettbox/releases)** page to download the latest installer for your platform.
+Please visit the **[[Releases]](https://github.com/lchkid/Cleanbox/releases)** page to download the latest installer for your platform.
 
 
 * **Cross-Platform Desktop**: 
@@ -71,8 +71,8 @@ Please visit the **[[Releases]](https://github.com/appshubcc/Bettbox/releases)**
 * **HarmonyOS NEXT:** Supported via [[ZhuoYiTong]](https://harmonyos.cool/android-app)
 
 **Other Installation Methods:**<br>
-**ArchLinux:** <code>yay -S bettbox-bin or paru -S bettbox-bin</code> (Maintained by [lyj404](https://github.com/lyj404/bettbox-aur))<br>
-**AMD64=v1:** <code>yay -S bettbox-compatible-bin or paru -S bettbox-compatible-bin</code> (Maintained by [VillagerTom](https://github.com/VillagerTom))
+**ArchLinux:** <code>yay -S cleanbox-bin or paru -S cleanbox-bin</code> (Maintained by [lyj404](https://github.com/lyj404/cleanbox-aur))<br>
+**AMD64=v1:** <code>yay -S cleanbox-compatible-bin or paru -S cleanbox-compatible-bin</code> (Maintained by [VillagerTom](https://github.com/VillagerTom))
 
 ---
 ## ❓ Frequently Asked Questions
@@ -80,7 +80,7 @@ Please visit the **[[Releases]](https://github.com/appshubcc/Bettbox/releases)**
 1.  **Installation, Startup & Security Issues**:
    - Android devices: **Ensure sufficient background permissions are granted and minimum requirements are met**: Android 8.0+
    - Legacy desktop devices: Check if your CPU architecture **requires downloading a specific CPU-level Compatible version**.
-   - **Security: Bettbox is fully open-source and transparent with zero telemetry. Current builds have passed SignPath security audit.**
+   - **Security: Cleanbox is fully open-source and transparent with zero telemetry. Current builds have passed SignPath security audit.**
 
 2.  **Desktop FAQs**:
    - Windows Admin Permissions: Handled automatically during installation — **no manual re-authorization required**.
@@ -90,15 +90,15 @@ Please visit the **[[Releases]](https://github.com/appshubcc/Bettbox/releases)**
 
 3.  **macOS Installation Guide**:
    - Download the appropriate `.dmg` file for your architecture (Intel / Apple Silicon) and double-click to open.
-   - Drag the Bettbox icon into the `Applications` folder.
+   - Drag the Cleanbox icon into the `Applications` folder.
    - **Bypassing macOS Gatekeeper on first launch** ([as Apple Developer Certificate is not currently purchased](https://support.apple.com/en-us/102445)):
-     - **Recommended**: Open `Applications`, **right-click the Bettbox icon**, select **"Open"**, and click **"Open"** again in the confirmation prompt.
-     - **Alternative**: If blocked, go to System Settings -> Privacy & Security, scroll to find Bettbox, and click **"Open Anyway"**.
+     - **Recommended**: Open `Applications`, **right-click the Cleanbox icon**, select **"Open"**, and click **"Open"** again in the confirmation prompt.
+     - **Alternative**: If blocked, go to System Settings -> Privacy & Security, scroll to find Cleanbox, and click **"Open Anyway"**.
    - Upon enabling TUN mode for the first time, enter your Mac system password when prompted.
    - **If prompted "App is damaged and can't be opened. You should move it to the Trash"**:
      - This is a false positive from macOS Gatekeeper for unsigned apps. Open Terminal and run:
        ```bash
-       xattr -d com.apple.quarantine /Applications/Bettbox.app
+       xattr -d com.apple.quarantine /Applications/Cleanbox.app
        ```
 
 4.  **Unable to Import Subscription Links**:
@@ -124,8 +124,8 @@ Building on Windows:
 
 Custom Script UI Adaptation:
 
-* Starting from v1.18.8, Bettbox supports external override scripts for UI adaptation. Taking AIsouler's **[Script/Config Repository](https://github.com/AIsouler/MyClash)** as an example, simply add the following declaration on the first line of your script to enable Bettbox built-in visual toggles:
-* <code>const Compatible_With_Bettbox = { ruleOptionsEnable: true };</code>
+* Starting from v1.18.8, Cleanbox supports external override scripts for UI adaptation. Taking AIsouler's **[Script/Config Repository](https://github.com/AIsouler/MyClash)** as an example, simply add the following declaration on the first line of your script to enable Cleanbox built-in visual toggles:
+* <code>const Compatible_With_Cleanbox = { ruleOptionsEnable: true };</code>
 
 ---
 
@@ -152,7 +152,7 @@ Custom Script UI Adaptation:
 
 **[FlClash GUI](https://github.com/chen08209/FlClash)** 〢 **[Mihomo Core](https://github.com/MetaCubeX/mihomo)**
 
-Special thanks to all [Contributors](https://github.com/appshubcc/Bettbox/graphs/contributors) and referenced open-source projects:
+Special thanks to all [Contributors](https://github.com/lchkid/Cleanbox/graphs/contributors) and referenced open-source projects:
 
 [CMFA](https://github.com/MetaCubeX/ClashMetaForAndroid), [Sparkle](https://github.com/xishang0128/sparkle), [SFA](https://github.com/SagerNet/sing-box-for-android), [HUSI](https://github.com/xchacha20-poly1305/husi), [V2rayN](https://github.com/2dust/v2rayN)
 

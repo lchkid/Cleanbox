@@ -1,12 +1,12 @@
 import 'dart:async';
 
-import 'package:bett_box/clash/core.dart';
-import 'package:bett_box/common/common.dart';
-import 'package:bett_box/enum/enum.dart';
-import 'package:bett_box/manager/window_manager.dart';
-import 'package:bett_box/plugins/app.dart';
-import 'package:bett_box/providers/providers.dart';
-import 'package:bett_box/state.dart';
+import 'package:cleanbox/clash/core.dart';
+import 'package:cleanbox/common/common.dart';
+import 'package:cleanbox/enum/enum.dart';
+import 'package:cleanbox/manager/window_manager.dart';
+import 'package:cleanbox/plugins/app.dart';
+import 'package:cleanbox/providers/providers.dart';
+import 'package:cleanbox/state.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -219,22 +219,7 @@ class AppEnvManager extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (kDebugMode) {
-      if (globalState.isPre) {
-        return Banner(
-          message: 'DEBUG',
-          location: BannerLocation.topEnd,
-          child: child,
-        );
-      }
-    }
-    if (globalState.isPre) {
-      return Banner(
-        message: 'PRE',
-        location: BannerLocation.topEnd,
-        child: child,
-      );
-    }
+    // No environment banner (DEBUG/PRE) in the corner of the main UI.
     return child;
   }
 }
